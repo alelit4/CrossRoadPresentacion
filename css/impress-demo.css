@@ -154,11 +154,12 @@ h1 {
     font-size: 120px;
     font-family: "League Gothic", Impact, sans-serif;
     font-weight: normal;
-    line-height: 0.9em;
+    line-height: 1.1em;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
     margin: 0 0 20px 0;
+
 }
 
 h2 {
@@ -170,7 +171,7 @@ h2 {
     font-size: 70px;
 }
   
-}
+
 
 h1 span, h2 span, h3 span, h4 span {
     font-weight: bold;
@@ -254,22 +255,12 @@ code {
 #init h1{
     margin-top: 20px;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
 }
 
-#init h2{
-    font-size: 35px;
-
+img#img2{
+    margin-left: 50px;
 }
-
-#init h3 {
-    font-size: 30px;
-}
-
-#init h3  span{
-   font-weight: bold;
-}
-
 
 #introduction h1, #tecnologias h1 {
     font-size: 90px;
@@ -281,28 +272,49 @@ code {
 }
 
 #introduction h3 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
-#comunicacion1 h1, #comunicacion2 h1, #comunicacion3 h1, #comunicacion4 h1 {
+#adhoc h2 {
+    font-size: 60px;
+}
+
+#objective h3{
+    font-size: 40px;
+
+}
+
+#comunicacion1 h1 {
+    font-size: 70px;
+}
+#comunicacion1 h1 {
+    font-size: 70px;
+}
+
+
+#comunicacion2 h1, #comunicacion3 h1, #comunicacion4 h1 {
     font-size: 90px;
 }
 
 
-#propagacion, #grupos, #balizamiento, #alertas {
+.white {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
 }
 
-#propagacion h1, #grupos h1, #balizamiento h1, #alertas h1{
-    color: rgb(255, 153, 0);
-    font-size: 60px;
+.white h1{
+    font-size: 70px;
     text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
 }
 
-#propagacion h2, #grupos h2, #balizamiento h2, #alertas h2{
+.white h2{
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(0deg, #11375e, #194146);
     font-size: 40px;
+    line-height: 1.3em;
+
 }
 
 #propagacion img, #grupos img, #balizamiento img, #alertas img{
@@ -316,7 +328,22 @@ code {
 }
 
 
-#seguridad h1, #crossroad h1, #crossroademergency h1, #web2 h1, #conclusion2 h1 {
+#seguridad h1{
+    font-size: 62px;
+
+}
+
+#tecnologias h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+#tecnologias h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+#crossroad h1, #crossroademergency h1, #web2 h1, #conclusion2 h1 {
     font-size: 80px;
 }
 
@@ -329,12 +356,26 @@ code {
 }
 
 #diagramaflujo h1{
-    font-size: 68px;
+    font-size: 60px;
 }
 
 #crossroadstandar2 img, #crossroademergency img{
     border-radius: 1px;
 }
+
+#web2 h1{
+    font-size: 100px;
+}
+
+
+#web3 h2{
+    font-size: 60px;
+}
+
+.todocentradito{
+    text-align: center;
+}
+
 
 
 #goleft{
@@ -356,7 +397,7 @@ code {
 
 #gorighttop2{
   margin-top: -40%;
-  margin-left: 100%;
+  margin-left: 80%;
   text-align: right;
 }
 
@@ -367,9 +408,15 @@ code {
 }
 
 #gorighttop4{
-  margin-top: -30%;
+  margin-top: -25%;
   margin-left: 10%;
   text-align: right;
+}
+
+#gorighttop5{
+    margin-top: -24%;
+    margin-left: 53%;
+    text-align: right;
 }
 
 
