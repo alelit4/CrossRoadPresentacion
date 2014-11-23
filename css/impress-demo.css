@@ -246,11 +246,25 @@ code {
     white-space: nowrap;
 }
 
-
-#introduction {
-  width: 800px;
- 
+.notes{
+    visibility: hidden;
+    display: none;
 }
+
+
+.impress-enabled .substep {
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -moz-transition:    all 1s;
+    -ms-transition:     all 1s;
+    -o-transition:      all 1s;
+    transition:         all 1s;
+}
+
+.impress-enabled .substep.active {
+    opacity: 1;
+}
+
 
 #init h1{
     margin-top: 20px;
@@ -266,17 +280,70 @@ img#img2{
     font-size: 90px;
 }
 
+ul{
+    list-style:circle;
 
-#introduction h2 {
-    font-size: 50px;
+}
+
+#introduction li {
+    font-size: 40px;
+    line-height: 1.5em;
+}
+
+#introduction .substep.present {
+    font-size: 43px;
+
+}
+
+#introduction h1 {
+    margin-top: -150px;
 }
 
 #introduction h3 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
-#adhoc h2 {
+#adhoc li {
     font-size: 60px;
+    line-height: 1.5em;
+}
+
+#adhoc .substep.present {
+    font-size: 63px;
+}
+
+#vanets2 h1 {
+    margin: 30px;
+}
+
+#vanets2 li {
+    font-size: 50px;
+    line-height: 1.5em;
+}
+
+#vanets2 .substep.present {
+    font-size: 53px;
+}
+
+
+#vanets4 h2 {
+    padding-bottom: 50px;
+    font-size: 60px;
+}
+
+#vanets4 li {
+    font-size: 50px;
+    line-height: 1.5em;
+}
+
+#vanets4 .substep.present {
+    font-size: 53px;
+}
+
+
+#red2{
+   margin-top: -320px;
+    margin-left: 350px;
 }
 
 #objective h3{
@@ -327,6 +394,38 @@ img#img2{
     font-size: 30px;
 }
 
+#objetivos li {
+    font-size: 50px;
+}
+
+#objetivos .substep.present {
+    font-size: 53px;
+}
+
+#crossroadstandar li{
+    line-height: 1.2em;
+    font-size: 50px;
+}
+
+#crossroadstandar .substep.present{
+    font-size: 53px;
+}
+
+#web2 li{
+    line-height: 1.5em;
+    font-size: 40px;
+}
+#web2 .substep.present{
+    font-size: 43px;
+}
+
+#web3 li{
+    line-height: 1.5em;
+    font-size: 40px;
+}
+#web3 .substep.present{
+    font-size: 43px;
+}
 
 #seguridad h1{
     font-size: 62px;
@@ -402,8 +501,8 @@ img#img2{
 }
 
 #gorighttop3{
-  margin-top: -40%;
-  margin-left: 90%;
+  margin-top: -50%;
+  margin-left: 10%;
   text-align: right;
 }
 
