@@ -48,7 +48,15 @@
 					<img id="logo" src="img/logo3.png" alt="logo" height="200" width="200">
 				</div>
                 <div class="notes">
-                    <p> kajs dkajs dkajsd akjsd aksdj dkjas</p>
+                    <p>
+                        Actualmente no existe un sistema estructurado para el establecimiento de prioridades de veh´ıculos en las intersecciones.
+                    </p>
+                    <p>
+                        En este proyecto vamos a proponer un m´etodo para el control de los veh´ıculos en los cruces bas´andonos en las prioridades de los conductores y en las v´ıas.
+                    </p>
+                    <p>
+                        El sistema planteado en este proyecto se llama CrossRoad e intenta realizar un control de paso en las intersecciones mediante el establecimiento de una red vehicular m´ovil, m´as concretamente mediante una VANET ubicua. Con esto lo que hacemos es crear un entorno de comunicacio´n cooperativa en el que las decisiones se toman dependiendo del estado de cada veh´ıculo.
+                    </p>
                 </div>
 
             </div>
@@ -62,6 +70,11 @@
                 	<img src="img/car2.gif" height="200" width="250"/>
                 	<img src="img/car3.gif" height="200" width="250"/>
                 </div>
+                <div class="notes">
+                    <p>
+                        El objetivo principal de este sistema es ayudar en la conducci´on segura mediante un asistente, pudiendo as´ı conseguir decrementar el nu´mero de accidentes que se generan en las intersecciones.
+                    </p>
+                </div>
              
             </div>
 
@@ -73,7 +86,7 @@
 				
             </div>
 
-          
+        <!--
             <div id="adhoc" class="step" data-x="198000" data-y="70000" data-z="-40" data-rotate-y="0" data-rotate-z="10" data-scale="6">
 				<h1> Redes Ad-hoc</h1>
                 <ul>
@@ -83,12 +96,17 @@
                 </ul>
                 <div class="notes">
                     <p>
-                        - Redes cableadas, routers o puntos de acceso
-                        - Intercambio de datos dinámico
+                        Las redes ad-hoc son un tipo de red inal´ambrica descentralizada
+                    </p>
+                    <p>
+                        que no dependen de una infraestructura preexistente, es decir, no depende de ningu´n sistema de redes cableadas, routers o de puntos de acceso [1].
+                    </p>
+                    <p>
+                        Estas redes se basan en que cada nodo que participa en la red es el encargado de repartir y reenviar los datos que posee hacia el resto de nodos; de esta forma el intercambio de informaci´on se realiza de manera din´amica sobre la base de la conectividad de la red.
                     </p>
                 </div>
 
-            </div>
+            </div>-->
 
            
           
@@ -100,18 +118,26 @@
                     <li class="substep"> Redes dinámicas. </li>
                 </ul>
 				<img id="red2" src="img/red2.gif" alt="red2" height="150" width="300">
+                <div class="notes">
+                    <p>
+                        Las redes VANETs son un caso particular de las redes ad-hoc m´oviles (MANETs).
+                    </p>
+                    <p>
+                    Se basa en la idea de generar una red en la que los nodos son veh´ıculos, y que ´esta sea altamente din´amica.
+                    </p>
+                </div>
 			</div>
 
-			<div id="vanets3" class="step" data-x="30000" data-y="90000" data-z="0" data-rotate-y="0" data-rotate-z="60" data-scale="5">
+			<!--<div id="vanets3" class="step" data-x="30000" data-y="90000" data-z="0" data-rotate-y="0" data-rotate-z="60" data-scale="5">
 				<div id="centrarimagen">
 					<h2>Ejemplo de comunicación VANET</h2>
 				</div>
 				<div id="centrarimagen">
 					<img id="vanet1" src="img/vanet.jpg" alt="vanet1" height="500" width="500" style="margin-top: 50px;">
 				</div>
-			</div>
+			</div>-->
 
-			<div id="vanets4" class="step" data-x="38000" data-y="90000" data-z="0" data-rotate-y="0" data-rotate-z="0" data-scale="5">
+			<!--<div id="vanets4" class="step" data-x="38000" data-y="90000" data-z="0" data-rotate-y="0" data-rotate-z="0" data-scale="5">
 				<h2> Idea <span>"Simple"</span> con desafíos <span>teóricos</span> y <span>técnicos</span>: </h2>
                 <ul>
                     <li class="substep">Protocolos de enrutamiento.</li>
@@ -122,9 +148,13 @@
 				<div id="gorighttop">
 					<img id="red" src="img/red.gif" alt="red" height="250" width="250">
 				</div>
+                <div class="notes">
+                    Inicialmente parece una idea bastante simple, sin embargo, presenta muchos desaf´ıos te´oricos y t´ecnicos,
+                    ya que se tienen que tener en cuenta aspectos como los protocolos de enrutamiento, los rangos de transmisi´on y frecuencias e incluso la calidad del servicio que queremos ofrecer. Para entender mejor este concepto podemos observar un ejemplo de este tipo de comunicaciones en la imagen
 
+                </div>
                      
-			</div>
+			</div>-->
 
     		<div id="comunicacion1" class="step" data-x="35000" data-y="100000" data-z="0" data-rotate-y="0" data-rotate-z="0" data-scale="10">
 				<h1>Tipos de comunicación en las VANETs </h1>
@@ -153,6 +183,11 @@
 				<img id="v2v1" src="img/v2v1.png" alt="v2v">
 				<h2>Necesidad de envío de mensajes a un vehículo o grupo de estos. </h2>
                 <h2>Vehículo de emergencia.</h2>
+                <div class="notes">
+                    <p>
+                        En ocaciones es necesario enviar un mensaje a un veh´ıculo espec´ıﬁco o a un grupo de ellos. Por ejemplo, si un veh´ıculo de emergencia se est´a aproximando un mensaje se debe de enviar a los veh´ıculos que le rodean, para de esta forma facilitar el camino de este veh´ıculo especial. En este caso un protocolo de enritamiento es nesario para reenviar el mensaje a su destino
+                    </p>
+                </div>
 
 			</div>
 
@@ -160,34 +195,49 @@
 				<h1> Comunicación de grupos (V2V) </h1>
 				<img id="v2v2" src="img/v2v2.png" alt="v2v2">
 				<h2>Envío entre vehículos con características específicas. </h2>
-                <h2>Parámetros estáticos o Dinámicos</h2>
+                <h2>Parámetros estáticos o dinámicos</h2>
+                <div class="notes">
+                    <p>
+                        Este esquema atiende al env´ıo de mensaje s´olo entre veh´ıculos que tienen algunas caracter´ısticas espec´ıﬁcas para participar en la comunicaci´on. Estas caracter´ısticas pueden ser est´aticas, como los veh´ıculos de una organizaci´on, o din´amicos, como los veh´ıculos de un ´area en un espacio determinado de tiempo. Ver ﬁgura 2.3.
+                    </p>
+                </div>
 			</div>
 
 			<div id="balizamiento" class="step white"  data-x="-35000" data-y="150000" data-z="-10000" data-rotate-y="180" data-rotate-z="0" data-scale="10">
 				<h1> Balizamiento (V2V) </h1>
 				<img id="v2v3" src="img/v2v3.png" alt="v2v3">
 				<h2>Los mensajes baliza se envían periódicamente con datos del vehículo (velocidad o estado de los frenos).</h2>
-			</div>
+                <div class="notes">
+                    <p>
+                        Los mensajes baliza se env´ıan peri´odicamente al ´area cercana de veh´ıculos. Los datos enviados suelen ser la velocidad actual, la utilizaci´on de frenos u otros datos referentes al remitente del veh´ıculo. Estos mensajes son utilizados para que los veh´ıculos sepan las condiciones de sus vecinos. Estos mensajes s´olo se env´ıan a los veh´ıculos pero estos no los reenv´ıan. Ver ﬁgura 2.4.
+                    </p>
+                </div>
+            </div>
 
 			<div id="alertas" class="step white" data-x="-40000" data-y="150000" data-z="-5000" data-rotate-y="270" data-rotate-z="0" data-scale="9">
 				<h1> Alertas (I2V/V2I)</h1>
 				<img id="v2v4" src="img/v2v4.png" alt="v2v4">
 				<h2> Envio desde la infraestructura cuando se detecta un peligro potencial. Útilies para la seguridad vial.</h2>
-			</div>
+                <div class="notes">
+                    <p>
+                        Estos mensajes se env´an mediante la infraestructura o me- diante veh´ıculos cuando detectan un peligro potencial. Son muy u´tiles para mejorar la seguridad vial. Un ejemplo de este tipo de comunicaci´on es el env´ıo de una aler- ta por la infraestructura, cuando una colisi´on potencial podr´ıa suceder, a todos los veh´ıculos que se aproximen al cruce. Ver ﬁgura 2.5.
+                    </p>
+                </div>
+            </div>
 
-			<div id="seguridad" class="step" data-x="-40000" data-y="160000" data-z="-1000" data-rotate-y="0" data-rotate-z="0" data-scale="6">
-				<h1> Requisitos de seguridad para las VANETs</h1>
-				<h2> - Identificación entidades. </h2>
-				<h2> - Auntenticación entidades/atributos. </h2>
-				<h2> - Preservación privacidad. </h2>
-				<h2> - No repudio. </h2>
-				<h2> - Confidencialidad. </h2>
-				<h2> - Disponibilidad. </h2>
-				<h2> - Información verdadera. </h2>
-				<div id="goright2">
-					<img id="img3" src="img/seguridad.gif" alt="nfc" height="300" width="340">
-				</div>
-			</div>
+			<!--<div id="seguridad" class="step" data-x="-40000" data-y="160000" data-z="-1000" data-rotate-y="0" data-rotate-z="0" data-scale="6">-->
+				<!--<h1> Requisitos de seguridad para las VANETs</h1>-->
+				<!--<h2> - Identificación entidades. </h2>-->
+				<!--<h2> - Auntenticación entidades/atributos. </h2>-->
+				<!--<h2> - Preservación privacidad. </h2>-->
+				<!--<h2> - No repudio. </h2>-->
+				<!--<h2> - Confidencialidad. </h2>-->
+				<!--<h2> - Disponibilidad. </h2>-->
+				<!--<h2> - Información verdadera. </h2>-->
+				<!--<div id="goright2">-->
+					<!--<img id="img3" src="img/seguridad.gif" alt="nfc" height="300" width="340">-->
+				<!--</div>-->
+			<!--</div>-->
 
 			<div id="tecnologias" class="step" data-x="4000" data-y="209000" data-z="0" data-rotate-y="0" data-rotate-z="0" data-scale="10">
 				<h1>Tecnologías de comunicación inalámrica. </h1>
@@ -204,12 +254,12 @@
 				<div id="centrarimagen">
 				<h1>La nube</h1>
 				<h2> WiFi - 3G - 4G/LTE </h2>
-				<img id="vanet2" src="img/vanet1.png" alt="vanet2" height="350" width="600" style="margin-top: 20px;">
+				<img id="vanet2" src="img/vanet1.png" alt="vanet2" height="250" width="500" style="margin-top: 20px;">
 				</div>
 
 			</div>
 
-			<div id="tecnologia" class="step" data-x="18000" data-y="220000" data-z="0" data-rotate-z="0" data-rotate-x="180" data-rotate-z="0" data-scale="10">
+			<!--<div id="tecnologia" class="step" data-x="18000" data-y="220000" data-z="0" data-rotate-z="0" data-rotate-x="180" data-rotate-z="0" data-scale="10">
 				<h1> ¿Qué utilizamos?</h1>
 				<h2> VANETs ubicuas. </h2>
 				<h2> Dispositivos Móviles. </h2>
@@ -218,6 +268,8 @@
 				</div>
 				
 			</div>
+            -->
+
 			<div id="escenario" class="step" data-x="20000" data-y="240000" data-z="0" data-rotate-x="0" data-rotate-z="45" data-rotate-x="90" data-scale="10">
 				<h1> Escenario </h1>
 				<h2> Intersecciones. </h2>
@@ -228,20 +280,20 @@
 				
 			</div>
 
-			<div id="intersecciones" class="step" data-x="30000" data-y="250000" data-z="0" data-rotate-y="0" data-rotate-z="0" data-scale="10">
+		<!--	<div id="intersecciones" class="step" data-x="30000" data-y="250000" data-z="0" data-rotate-y="0" data-rotate-z="0" data-scale="10">
 				<h1> Intersecciones </h1>
 				<h2> Área en la que confluyen dos o más vías <span>(ramales)</span>.</h2>
-				<div id="centrarimagen"> 
+				<div id="centrarimagen">
 					<img id="cruce1" src="img/cruce1.png" alt="cruce1" height="200" width="290" style="margin-top: 30px;">
 					<img id="cruce2" src="img/cruce1.jpg" alt="cruce2" height="200" width="290" style="margin-top: 30px; margin-left: 30px;">
 				</div>
-				<div id="centrarimagen"> 
+				<div id="centrarimagen">
 					<img id="cruce3" src="img/cruce2.jpg" alt="cruce3" height="200" width="290" style="margin-top: 20px;">
 					<img id="cruce4" src="img/cruce3.jpg" alt="cruce4" height="200" width="290" style="margin-top: 20px;  margin-left: 30px;">
 				</div>
-			
-			</div>
 
+			</div>
+-->
 			<div id="crossroad" class="step" data-x="30000" data-y="20000" data-z="0" data-rotate-y="0" data-rotate-z="0"  data-rotate-x="0" data-scale="10">
 				<div id="centrarimagen">
 					<h1> Asistente para intersecciones </h1>
@@ -272,7 +324,9 @@
 					<img id="algoritmo" src="img/algoritmo.png" alt="algoritmo" height="600" width="900">
 
 				</div>
-			
+                <div class="notes">
+                    <h3> Aconsejamos </h3>
+                </div>
 			</div>
 
 			<div id="sistema" class="step" data-x="100" data-y="260000" data-z="0" data-rotate-y="0" data-rotate-z="0" data-scale="10">
@@ -373,7 +427,7 @@
                     <li class="substep">Mapa con todos los trackings. </li>
                     <li class="substep"> Mapa con los tracking de un vehículo. </li>
                     <li class="substep"> Búsqueda de vehículos. </li>
-                    <li class="substep">  Listado de vehículos, trackings, señales y vehículos. </li>
+                    <li class="substep">  Listado de vehículos, trackings y señales. </li>
                 </ul>
 			    <div class="notes">
                     Rango de tiempo
@@ -381,7 +435,7 @@
 			</div>
 
 		
-
+<!--
 			<div id="web3" class="step" data-x="100" data-y="320000" data-z="0" data-rotate-y="0" data-rotate-z="0" data-scale="10">
 				<h1> Servicio Web </h1>
                 <ul>
@@ -395,7 +449,7 @@
 				<div id="gorighttop2">
 					<img id="server" src="img/server.gif" alt="server" height="200" width="250">
 				</div>
-			</div>
+			</div>-->
 
 
 			<div id="conclusion2" class="step todocentradito" data-x="-9000" data-y="270000" data-z="-180000" data-rotate-z="90" data-rotate-x="90" data-scale="3">
